@@ -1,9 +1,4 @@
 $(document).ready(function(){
-
-  
- 
-
-
   const FunVisible = () => {
     if (window.pageYOffset > 250) {
       $("header").addClass("is-sticky");
@@ -246,7 +241,6 @@ $(document).ready(function(){
 </div>
 <!-- End Side bar mobile -->
   `;
-
   $("#header").html(header);
     const footer = `
         <footer class="bg-[#006997] pb-10">
@@ -335,7 +329,7 @@ $(document).ready(function(){
             ></path>
           </svg>
           <p class="Btn-backtotop1text">Back to Top</p>
-        </button>`;
+  </button>`;
   $("#backtotop").html(backtotop);
   var btn = $(".Btn-backtotop1");
   $(window).scroll(function () {
@@ -345,12 +339,10 @@ $(document).ready(function(){
         btn.removeClass("show");
       }
   });
-    
   btn.on("click", function (e) {
       e.preventDefault();
       $("html, body").animate({ scrollTop: 0 }, "500");
-  });
-  
+  }); 
   const news_right = `<div class="border rounded-lg p-5 lg:p-10 ">
                 <h5 class="text-[1.7rem] font-bold py-3">
                     TÌM KIẾM
@@ -510,12 +502,8 @@ $(document).ready(function(){
                    
                 </div>
                 
-            </div>`;
-  $("#news_right").html(news_right);
-
-
-
-
+  </div>`;
+  $("#news_right").html(news_right)
   $('#showloading').delay(500).queue(function(next) {
     $(this).addClass('hidden');
     next();
