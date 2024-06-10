@@ -341,7 +341,7 @@ $(document).ready(function(){
   });
   btn.on("click", function (e) {
       e.preventDefault();
-      $("html, body").animate({ scrollTop: 0 }, "500");
+      $("html, body").animate({ scrollTop: 0 }, "600");
   }); 
   const news_right = `<div class="border rounded-lg p-5 lg:p-10 ">
                 <h5 class="text-[1.7rem] font-bold py-3">
