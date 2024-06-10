@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Tin tức  Happyluck cực dễ dàng chỉ qua 3 bước đơn giản</title>
+    <link
+      rel="icon"
+      href="./assets/images/cropped-logo-happyluke-60x60.png"
+      sizes="192x192"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/jquery-3.7.1.min.js"></script>
+    <script src="assets/tailwind.js"></script>
+    <link rel="stylesheet" href="./assets/index.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+<div id="header"></div>
+<main>
+    <div class="shadow-lg">
+        <div class="container mx-auto py-3">
+        <p>Home - Tin tức</p></div>
+    </div>
+    <div class="container mx-auto">
+    <div class="content-1 content-1-khuyen grid grid-cols-12 gap-5 lg:gap-10 my-5 lg:my-10 ">
+        <div class="col-span-12 md:col-span-9 border rounded-2xl *:pb-7 p-5 lg:p-10 *:mb-5 *:lg:mb-10">
+            <div class="border rounded-lg p-5 lg:p-10">
+                <h1 >Tin tức</h1>
+                <p>Tin tức trò chơi, thông tin về nhà cái happyluck tung khuyến mãi, bảo trì, thay đổi link truy cập được luke79 cập nhật ngay dưới đây.</p>
+            </div>
+            <div id="showloading" class=" h-screen w-full left-0 bg-[#adadadbe] top-0 fixed duration-1000">
+                <div class=' space-x-2 justify-center flex items-center mt-[20%]'>
+                    <div class='h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:0s]'></div>
+                   <div class='h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:-0.3s]'></div>
+                   <div class='h-8 w-8 bg-black rounded-full animate-bounce'></div>
+                  </div>
+            </div>
+            <div id="items_main"></div>
+        </div>
+        <div class="col-span-12 md:col-span-3" id="news_right">
+        </div>
+    </div>
+    </div>
+</main>
+<div id="footer"></div>
+<div id="backtotop"></div>
+<script>
+      var items_main = [
+  {
+    h2: "FF là gì trong game LOL? FF khi nào? – Luke79.top giải đáp",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "FF là gì trong game Liên Minh Huyền Thoại? Người chơi thường FF khi nào? Hiện nay thuật ngữ FF đang được rất nhiều game thủ LOL sử dụng khi chơi ở những trận đấu không có hy vọng chiến thắng. Thậm chí còn có nhiều người chơi bỏ...",
+    image: "ff-la-gi-2-600x400.jpg"
+  },
+  {
+    h2: "Bot gap là gì trong LMHT? – Luke79.top giải mã",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Bot gap là gì trong Liên Minh Huyền Thoại? Tầm quan trọng của Bot gap trong LOL như thế nào? Người chơi cần làm gì để tránh bị coi là Bot gap trong game? Hiện nay có rất nhiều game thủ muốn cải thiện trình độ chơi game của...",
+    image: "phuong-phap-bot-gap-600x400.jpg"
+  },
+  {
+    h2: "Game nổ hũ đổi thưởng – Sản phẩm hấp dẫn nhất tại Luke79.top",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Game nổ hũ đổi thưởng đang là một trong những sản phẩm cược nhiều anh em chọn tại nhà cái HappyLuck. Lượng người tham gia cược game khá đông đảo. Dù vậy, với một vì người mới bắt đầu thử sức sẽ phần nào thấy xa lạ. Đừng bỏ...",
+    image: "huong-dan-coi-game-no-hu-doi-thuong-600x400.jpg"
+  },
+  {
+    h2: "Hướng dẫn 3 bước chơi lô đề HappyLuck đơn giản nhất cho “lính mới”",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Ngoài đầu tư cá cược bóng đá, tham gia đánh bài hay trải nghiệm những vòng quay tại slot game HappyLuck. Thì việc đầu tư vào lô đề HappyLuck cũng là cách giúp bạn kiếm tiền hiệu quả tại nhà cái này. Vậy bạn đã biết cách chơi lô...",
+    image: "lo-de-happyluke-co-gi-dac-biet-600x400.jpg"
+  },
+  {
+    h2: "Happyluck Việt Nam – Sân chơi cá cược uy tín dành cho người Việt",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Nằm trong kế hoạch mở rộng thị trường cá cược của mình, Happyluck đã chính thức có mặt tại Việt Nam. Với tên gọi của nhà cái là Happyluck Việt Nam, đây thực sự trở thành điểm đến lý tưởng cho cộng đồng người yêu thích cá cược tại...",
+    image: "Nha-cai-Happyluke-Viet-Nam-hoat-dong-soi-noi-tai-Viet-Nam-600x400.jpg"
+  },
+  {
+    h2: "Happyluck 88 là gì? Có nên tham gia cá cược tại nhà cái Happyluck 88 không?",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Sự xuất hiện của nhà cái Happyluck 88 làm dấy lên nhiều câu hỏi nghi ngờ về sân chơi cá cược này. Qua đó người chơi đều đưa ra câu hỏi thắc mắc rằng nhà cái Happyluck 88 là gì? Liệu rằng họ có phải là 1 thương hiệu...",
+    image: "Happyluke-88-mang-y-nghia-la-su-may-man-va-tai-loc-600x378.jpg"
+  },
+  {
+    h2: "Happyluck Bonus – Hướng dẫn người chơi cách nhận thưởng",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Chúng ta đều biết rằng Happyluck là một nhà cái cung cấp dịch vụ cá cược trực tuyến vô cùng đẳng cấp và hấp dẫn. Bên cạnh đó nhà cái còn mang tới thật nhiều các chương trình khuyến mãi nhận tiền thưởng tại Happyluck. Vậy bạn đã biết...",
+    image: "Thuong-nap-lai-tai-Happyluke-600x400.jpg"
+  },
+  {
+    h2: "Top 7 Game Happyluck Dễ Chơi – Đã Chơi Là Thắng",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Khi tham gia vào nhà cái Happyluck, bạn sẽ bị choáng ngợp bởi kho game của họ quá đồ sộ. Điều này khiến cho nhiều anh em cược thủ mới chưa biết cách chọn game nào để đầu tư cá cược. Do vậy trong bài viết này, chúng tôi...",
+    image: "slot-game-happyluke-600x400.jpg"
+  },
+  {
+    h2: "Cập nhật cách tải app Happyluck cho điện thoại iOS và Android",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Việc chơi cá cược tại Happyluck thông qua ứng dụng nhà cái của họ đang là xu hướng được nhiều anh em cược thủ lựa chọn. Hiện nay app Happyluck được cung cấp miễn phí cho người dùng điện thoại iOS và Android. Vì thế mà người chơi sẽ...",
+    image: "huong-dan-tai-app-happyluke-cho-dien-thoai-ios-600x317.jpg"
+  },
+  {
+    h2: "Happyluck App – Ứng dụng chơi cá cược trên điện thoại số 1 hiện nay",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Cũng không hề tỏ ra thua kém với những nhà cái cá cược khác trên thị trường hiện nay. Happyluck cũng đã bắt kịp xu hướng chơi cá cược trực tuyến trên điện thoại di động. Qua đó người chơi có thể tham gia đặt cược bất cứ trò...",
+    image: "happyluke-app-ung-dung-choi-ca-cuoc-tren-dien-thoai-so-1-hien-nay-600x369.jpg"
+  },
+  {
+    h2: "Top 4 trò chơi tại Happyluck slot có tỷ lệ thắng cược cao",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Tham gia vào Happyluck ngoài việc bạn trải nghiệm các trò chơi dễ chơi như Poker, Baccarat, Blackjack…để đưa ra chiến lược đầu tư kiếm tiền hiệu quả. Người chơi cũng có thể chọn lựa Slot games tại nhà cái này. Bởi vì đây là những tựa đề game...",
+    image: "loi-ich-cua-thanh-vien-khi-choi-tai-happyluke-slot-600x400.jpg"
+  },
+  {
+    h2: "Happyluck Indonesia là gì? Nhà cái từ Indonesia có uy tín hay không?",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Gần đây trên thị trường cá cược lại đang có sự xuất hiện của thương hiệu nhà cái Happyluck Indonesia. Với tên tuổi gắn liền với nhà cái hàng đầu Châu Á Happyluck, điều này khiến cho nhiều người nghi ngờ vì sự uy tín của Happyluck Indonesia là...",
+    image: "Happyluke-Indonesia-nha-cai-du-phong-uy-tin-cua-Happyluke-600x378.jpg"
+  },
+  {
+    h2: "Chơi HappyLuck có bị bắt không? Những giải đáp chính xác đến từ chuyên gia",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Chơi HappyLuck có bị bắt không? Đây chắc chắn sẽ là câu hỏi mà nhiều người đặt ra trước khi họ muốn tham gia vào nhà cái HappyLuck. Bởi lẽ trong những năm gần đây xu hướng chọn chơi cá cược trực tuyến tại nhà cái đang phát triển...",
+    image: "choi-happyluke-co-bi-bat-khong-giai-dap-tu-chuyen-gia-600x266.jpg"
+  },
+  {
+    h2: "Tại sao không vào được HappyLuck và 3 cách khắc phục tình trạng này",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Việc người chơi không thể truy cập được vào HappyLuck làm ảnh hưởng lớn tới trải nghiệm của nhiều anh em cược thủ. Tuy nhiên để đưa ra chính xác giải pháp khắc phục cho tình trạng không vào được HappyLuck. Đầu tiên người chơi cần tìm hiểu lý...",
+    image: "link-vao-nha-cai-bi-chan-la-ly-do-tai-sao-khong-vao-duoc-happyluke-600x400.jpg"
+  },
+  {
+    h2: "HappyLuck thethao có gì đặc biệt?",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Là 1 tín đồ yêu thích thể thao và muốn thử sức với việc đầu tư cá cược tại HappyLuck. Chắc chắn bạn không thể bỏ qua sân chơi HappyLuck thethao khi là thành viên của nhà cái này. Vậy bạn đã biết đâu chính là những điểm mà...",
+    image: "ca-do-bong-ro-duoc-nhieu-nguoi-yeu-thich-tai-happyluke-600x370.jpg"
+  },
+  {
+    h2: "HappyLuck bị sập?Bài đính chính đanh thép",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Liên tiếp vấp phải những phốt nói rằng nhà cái HappyLuck lừa đảo, bị bắt hay bị sập. Điều này thực sự đã làm ảnh hưởng cực lớn tới sự uy tín mà HappyLuck đã gây dựng được trong nhiều năm qua. Vì thế để người chơi cá cược...",
+    image: "Link-vao-HappyLuke-khong-truy-cap-duoc-600x250.jpg"
+  },
+  {
+    h2: "Đại lý HappyLuck là gì? Cách đăng ký để trở thành đại lý nhà cái HappyLuke",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Nhờ vào sự phát triển vượt bậc của công nghệ thông tin 4.0 mà chúng ta có vô số cách để kiếm tiền trên mạng hiện nay. Chẳng hạn như: Bán hàng online, kiếm tiền bằng stream, chơi cá cược online…Trong đó chắc chắn bạn sẽ không thể bỏ...",
+    image: "Dai-ly-HappyLuke-la-gi-600x400.jpg"
+  },
+  {
+    h2: "Cá cược bóng đá HappyLuck – Cách chơi từ A – Z",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Là thành viên “chân ướt chân ráo” mới tham gia vào nhà cái HappyLuck để chơi cá độ bóng đá. Bạn đang chưa rõ về cách thức chơi Cá cược bóng đá HappyLuck nên bắt đầu từ đâu? Vì thế trong bài viết chia sẻ này, chúng tôi muốn hướng...",
+    image: "Tao-tai-khoan-ca-do-bong-da-tai-HappyLuke-600x351.jpg"
+  },
+  {
+    h2: "HappyLuck bảo trì – Lý do vì sao?",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Khi chơi tại HappyLuck, ít nhiều sẽ có lúc bạn thấy nhà cái này tiến hành bảo trì. Vậy bạn đã biết HappyLuck bảo trì là gì chưa? Những lý do nào khiến nhà cái HappyLuck phải tiến hành bảo trì cho hệ thống của mình? Nếu bạn đang...",
+    image: "Bao-tri-HappyLuke-theo-dinh-ky-600x365.jpg"
+  },
+  ];
+  $.each(items_main, function(index, item) {
+    var item_main = `
+        <div class="border rounded-lg p-5 lg:p-10 *:pb-5 mb-5">
+            <h2>${item.h2}</h2>
+            <div class="flex items-center gap-5">
+                <div class="flex items-center w-[3rem] h-[3rem] bg-center">
+                    <img class="w-full h-full rounded-[100%] object-cover" src="./assets/images/hoang-khanh-ngan-600x400.jpg" alt="">
+                </div>   
+                <span class="text-[1.4rem]">${item.span}</span>  
+            </div>
+            <div class="grid grid-cols-12 gap-5 items-center">
+                <div class="col-span-12 lg:col-span-3 ">
+                    <img src="./assets/images/${item.image}" alt="">
+                </div>
+                <div class="*:pb-5 col-span-12 lg:col-span-9">
+                    <p>${item.p}</p>
+                    <button type="button" class="text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-lg text-2xl px-10 py-4 text-center me-2 mb-2">Xem thêm</button>
+                </div>
+            </div>
+        </div>
+    `;
+
+    $('#items_main').append(item_main);
+  });
+</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="./assets/javascript.js"></script>
+
+</body>
