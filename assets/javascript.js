@@ -24,222 +24,335 @@ $(document).ready(function(){
     
     });
   const header = `
-<header class="top-0 w-full">
-    <div class="header1 w-full bg-[#009fe3]">
+    <header class="top-0 w-full">
+      <div class="header1 w-full bg-[#009fe3]">
         <div class="container mx-auto flex justify-between py-3 items-center">
-            <div class="logo">
-                <a href="index.html">
-                    <img class="max-w-[7rem]" src="./assets/images/cropped-logo-happyluke.png" alt="Logo" />
-                </a>
-            </div>
-            <div class="hidden items-center gap-10 md:flex">
-                <button class="Btn1 w-[18rem] h-[4rem] text-[1.8rem]" onclick="url()">
-                    <a href="https://www.hay88.one/?inviteCode=5829700">Đăng Nhập</a>
-                </button>
-                <button class="Btn1 w-[18rem] h-[4rem] text-[1.8rem]" onclick="url()">
-                    <a href="https://www.hay88.one/?inviteCode=5829700">Đăng Ký</a>
-                </button>
-            </div>
-            <div class="menu-icon md:hidden" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
-                <svg class="h-17 w-17 text-white cursor-pointer" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" />
-                    <line x1="4" y1="6" x2="20" y2="6" />
-                    <line x1="4" y1="12" x2="20" y2="12" />
-                    <line x1="4" y1="18" x2="20" y2="18" />
-                </svg>
-            </div>
+          <div class="logo">
+            <a href="index.html">
+              <img
+                class="max-w-[7rem]"
+                src="./assets/images/cropped-logo-happyluke.png"
+                alt="Logo"
+              />
+            </a>
+          </div>
+          <div class="hidden items-center gap-10 md:flex">
+            <button class="Btn1 w-[18rem] h-[4rem] text-[1.8rem]">
+              <a href="https://www.hay88.one/?inviteCode=5829700">Đăng Nhập</a>
+            </button>
+            <button class="Btn1 w-[18rem] h-[4rem] text-[1.8rem]">
+              <a href="https://www.hay88.one/?inviteCode=5829700">Đăng Ký</a>
+            </button>
+          </div>
+          <div class="menu-icon md:hidden">
+            <label class="hamburger">
+              <svg viewBox="0 0 32 32">
+                <path
+                  class="line line-top-bottom"
+                  d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+                ></path>
+                <path class="line" d="M7 16 27 16"></path>
+              </svg>
+            </label>
+          </div>
         </div>
-    </div>
-    <div class="header2 backgroundanimation">
+      </div>
+      <div class="header2 backgroundanimation">
         <div class="container mx-auto">
-            <div class="flex items-center gap-10 md:hidden justify-center py-3">
-                <button class="Btn1 w-[14rem] h-[3rem] text-[1.8rem]">
-                    <a href="https://www.hay88.one/?inviteCode=5829700">Đăng Nhập</a>
-                </button>
-                <button class="Btn1 w-[14rem] h-[3rem] text-[1.8rem]">
-                    <a href="https://www.hay88.one/?inviteCode=5829700">Đăng Ký</a>
-                </button>
-            </div>
-            <ul class="items-center text-white font-semibold text-2xl uppercase flex-wrap *:leading-10 hidden md:flex">
-                <li class="p-5    relative duration-1000" data-page="index">
-                    <a href="index.html" class="tittle_navbar">Trang Chủ</a>
-                </li>
-                <li class="p-5   relative">
-                    <a href="Đăng ký HappyLuke.html" class="tittle_navbar">Đăng ký HappyLuck</a>
-                </li>
-                <li class="p-5 group   relative">
-                    <a href="Khuyến Mãi HappyLuke.html" class="flex items-center">
-                        <div class="mr-1 tittle_navbar">Khuyến Mãi HappyLuck</div>
-                        <div>
-                            <svg class="h-8 w-8 text-gray-600 inline-block" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" />
-                                <polyline points="6 9 12 15 18 9" />
-                            </svg>
-                        </div>
+          <div class="flex items-center gap-10 md:hidden justify-center py-3">
+            <button class="Btn1 w-[14rem] h-[3rem] text-[1.8rem]">
+              <a href="https://www.hay88.one/?inviteCode=5829700">Đăng Nhập</a>
+            </button>
+            <button class="Btn1 w-[14rem] h-[3rem] text-[1.8rem]">
+              <a href="https://www.hay88.one/?inviteCode=5829700">Đăng Ký</a>
+            </button>
+          </div>
+          <ul
+            class="items-center text-white font-semibold text-2xl uppercase flex-wrap *:leading-10 hidden md:flex"
+          >
+            <li class="p-5 relative " data-page="index">
+              <a href="index.html" class="tittle_navbar">Trang Chủ</a>
+            </li>
+            <li class="p-5 relative">
+              <a href="Đăng ký HappyLuke.html" class="tittle_navbar"
+                >Đăng ký HappyLuck</a
+              >
+            </li>
+            <li class="p-5 group relative">
+              <a href="Khuyến Mãi HappyLuke.html" class="flex items-center">
+                <div class="mr-1 tittle_navbar">Khuyến Mãi HappyLuck</div>
+                <div>
+                  <svg
+                    class="h-8 w-8 text-gray-600 inline-block"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" />
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </div>
+              </a>
+              <div
+                class="duration-700 discription-dropdown opacity-0 z-10 invisible group-hover:visible group-hover:opacity-[1] border-2 bg-white divide-y divide-gray-100 shadow absolute w-[30rem] left-0 top-[4.97rem]"
+              >
+                <ul
+                  class="px-5 text-2xl text-gray-500 font-semibold *:py-4 *:border-b *:border-gray-100"
+                >
+                  <li class="hover:text-gray-900">
+                    <a href="Khuyến Mãi Hoàn Trả.html" class="transition-all">
+                      <span>Khuyến Mãi Hoàn Trả</span>
                     </a>
-                    <div class="duration-700 discription-dropdown opacity-0 z-10 invisible group-hover:visible group-hover:opacity-[1] border-2 bg-white divide-y divide-gray-100 shadow absolute w-[30rem] left-0 top-[4.97rem]">
-                        <ul class="px-5 text-2xl text-gray-500 font-semibold *:py-4 *:border-b *:border-gray-100">
-                            <li class="hover:text-gray-900">
-                                <a href="Khuyến Mãi Hoàn Trả.html" class="transition-all">
-                                    <span>Khuyến Mãi Hoàn Trả</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="p-5 group   relative">
-                    <a href="Sản phẩm.html" class="flex items-center">
-                        <div class="mr-1 tittle_navbar">Sản phẩm</div>
-                        <div>
-                            <svg class="h-8 w-8 text-gray-600 inline-block" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" />
-                                <polyline points="6 9 12 15 18 9" />
-                            </svg>
-                        </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="p-5 group relative">
+              <a href="Sản phẩm.html" class="flex items-center">
+                <div class="mr-1 tittle_navbar">Sản phẩm</div>
+                <div>
+                  <svg
+                    class="h-8 w-8 text-gray-600 inline-block"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" />
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </div>
+              </a>
+              <div
+                class="keyframe duration-700 discription-dropdown opacity-0 z-10 invisible group-hover:visible group-hover:opacity-[1] border-2 bg-white divide-y divide-gray-100 shadow absolute w-[30rem] left-0 top-[4.97rem]"
+              >
+                <ul
+                  class="px-5 text-2xl text-gray-500 font-semibold *:py-4 *:border-b *:border-gray-100"
+                >
+                  <li class="hover:text-gray-900">
+                    <a
+                      href="https://www.hay88.one/?inviteCode=5714930"
+                      class="transition-all"
+                    >
+                      <span>Baccarat</span>
                     </a>
-                    <div class="keyframe duration-700 discription-dropdown opacity-0 z-10 invisible group-hover:visible group-hover:opacity-[1] border-2 bg-white divide-y divide-gray-100 shadow absolute w-[30rem] left-0 top-[4.97rem]">
-                        <ul class="px-5 text-2xl text-gray-500 font-semibold *:py-4 *:border-b *:border-gray-100">
-                            <li class="hover:text-gray-900">
-                                <a href="https://www.hay88.one/?inviteCode=5714930" class="transition-all">
-                                    <span>Baccarat</span>
-                                </a>
-                            </li>
-                            <li class="hover:text-gray-900">
-                                <a href="https://www.hay88.one/?inviteCode=5714930" class="transition-all">
-                                    <span>Blackjack</span>
-                                </a>
-                            </li>
-                            <li class="hover:text-gray-900">
-                                <a href="https://www.hay88.one/?inviteCode=5714930" class="transition-all">
-                                    <span>Roulette</span>
-                                </a>
-                            </li>
-                            <li class="hover:text-gray-900">
-                                <a href="https://www.hay88.one/?inviteCode=5714930" class="transition-all">
-                                    <span>Rồng Hổ</span>
-                                </a>
-                            </li>
-                            <li class="hover:text-gray-900">
-                                <a href="https://www.hay88.one/?inviteCode=5714930" class="transition-all">
-                                    <span>Esports</span>
-                                </a>
-                            </li>
-                            <li class="hover:text-gray-900">
-                                <a href="https://www.hay88.one/?inviteCode=5714930" class="transition-all">
-                                    <span>Mậu Binh</span>
-                                </a>
-                            </li>
-                            <li class="hover:text-gray-900">
-                                <a href="https://www.hay88.one/?inviteCode=5714930" class="transition-all">
-                                    <span>Bầu Cua</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="p-5    relative">
-                    <a href="Gái Thiếu Vải.html" class="tittle_navbar">Gái Thiếu Vải</a>
-                </li>
-                <li class="p-5    relative">
-                    <a href="Soi cầu.html" class="tittle_navbar">Soi cầu</a>
-                </li>
-                <li class="p-5   relative">
-                    <a href="Tin tức.html" class="tittle_navbar">Tin tức</a>
-                </li>
-                <li class="p-5  relative">
-                    <a href="Hướng dẫn.html" class="tittle_navbar">Hướng dẫn</a>
-                </li>
-            </ul>
+                  </li>
+                  <li class="hover:text-gray-900">
+                    <a
+                      href="https://www.hay88.one/?inviteCode=5714930"
+                      class="transition-all"
+                    >
+                      <span>Blackjack</span>
+                    </a>
+                  </li>
+                  <li class="hover:text-gray-900">
+                    <a
+                      href="https://www.hay88.one/?inviteCode=5714930"
+                      class="transition-all"
+                    >
+                      <span>Roulette</span>
+                    </a>
+                  </li>
+                  <li class="hover:text-gray-900">
+                    <a
+                      href="https://www.hay88.one/?inviteCode=5714930"
+                      class="transition-all"
+                    >
+                      <span>Rồng Hổ</span>
+                    </a>
+                  </li>
+                  <li class="hover:text-gray-900">
+                    <a
+                      href="https://www.hay88.one/?inviteCode=5714930"
+                      class="transition-all"
+                    >
+                      <span>Esports</span>
+                    </a>
+                  </li>
+                  <li class="hover:text-gray-900">
+                    <a
+                      href="https://www.hay88.one/?inviteCode=5714930"
+                      class="transition-all"
+                    >
+                      <span>Mậu Binh</span>
+                    </a>
+                  </li>
+                  <li class="hover:text-gray-900">
+                    <a
+                      href="https://www.hay88.one/?inviteCode=5714930"
+                      class="transition-all"
+                    >
+                      <span>Bầu Cua</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="p-5 relative">
+              <a href="Gái Thiếu Vải.html" class="tittle_navbar"
+                >Gái Thiếu Vải</a
+              >
+            </li>
+            <li class="p-5 relative">
+              <a href="Soi cầu.html" class="tittle_navbar">Soi cầu</a>
+            </li>
+            <li class="p-5 relative">
+              <a href="Tin tức.html" class="tittle_navbar">Tin tức</a>
+            </li>
+            <li class="p-5 relative">
+              <a href="Hướng dẫn.html" class="tittle_navbar">Hướng dẫn</a>
+            </li>
+          </ul>
         </div>
-    </div>
-</header>
+      </div>
+    </header>
     <!-- Side-bar mobile menu -->
-<div id="drawer-navigation" class="menu-mobile fixed top-0 left-0 z-[1000] -translate-x-full w-[60vw] overflow-y-auto transition-transform duration-500" tabindex="-1" aria-labelledby="drawer-navigation-label">
-  <div class="overflow-y-auto bg-white h-screen">
-    <ul class="">
-      <li class="">
-        <a href="index.html" class="flex items-center px-5 py-5 font-semibold text-2xl text-gray-900 rounded-lg hover:bg-gray-100">
-          <span class="ml-3">TRANG CHỦ</span>
-        </a>
-      </li>
-      <li class="">
-        <a href="Đăng ký HappyLuke.html" class="flex items-center px-5 py-5 font-semibold text-2xl text-gray-900 rounded-lg hover:bg-gray-100">
-          <span class="ml-3">ĐĂNG KÝ HAPPYLUCK</span>
-        </a>
-      </li>
-      <li>
-        <button type="button" class="flex items-center w-full px-5 py-5 text-2xl font-semibold text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100" >
-                <a href="Khuyến Mãi HappyLuke.html" class="flex-1 ml-3 text-left whitespace-nowrap" >KHUYẾN MÃI HAPPYLUCK</a>
-                <svg sidebar-toggle-item class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-        </button>
-        <ul id="dropdown-example" class="hidden py-2">
-          <li class="">
-            <a href="#"
-              class="flex items-center w-full p-5 text-2xl font-medium text-gray-800 transition duration-75 rounded-lg group  pl-11">KHUYẾN MÃI HOÀN TRẢ</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <button type="button" class="flex items-center w-full px-5 py-5 text-2xl font-semibold text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100" >
-                <a href="./Sản phẩm.html" class="flex-1 ml-3 text-left whitespace-nowrap" >SẢN PHẨM</a>
-                <svg sidebar-toggle-item class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-controls="dropdown-example-2" data-collapse-toggle="dropdown-example-2"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-        </button>
-        <ul id="dropdown-example-2" class="hidden py-2 space-y-2">
-          <li>
-            <a href="#"
-              class="flex items-center w-full p-5 text-2xl font-medium text-gray-800 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">BACCARAT</a>
-          </li>
-          <li>
-            <a href="#"
-              class="flex items-center w-full p-5 text-2xl font-medium text-gray-800 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">BLACKJACK</a>
-          </li>
-          <li>
-            <a href="#"
-              class="flex items-center w-full p-5 text-2xl font-medium text-gray-800 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">ROULETTE</a>
-          </li>
-          <li>
-            <a href="#"
-              class="flex items-center w-full p-5 text-2xl font-medium text-gray-800 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">RỒNG HỔ</a>
-          </li>
-          <li>
-            <a href="#"
-              class="flex items-center w-full p-5 text-2xl font-medium text-gray-800 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">ESPORTS</a>
-          </li>
-          <li>
-            <a href="#"
-              class="flex items-center w-full p-5 text-2xl font-medium text-gray-800 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">MẬU BINH</a>
-          </li>
-          <li>
-            <a href="#"
-              class="flex items-center w-full p-5 text-2xl font-medium text-gray-800 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">BẦU CUA</a>
-          </li>
-        </ul>
-      </li>
-      <li class="">
-        <a href="Gái Thiếu Vải.html" class="flex items-center px-5 py-5 font-semibold text-2xl text-gray-900 rounded-lg hover:bg-gray-100">
-          <span class="ml-3">GÁI THIẾU VẢI</span>
-        </a>
-      </li>
-      <li class="">
-        <a href="Soi cầu.html" class="flex items-center px-5 py-5 font-semibold text-2xl text-gray-900 rounded-lg hover:bg-gray-100">
-          <span class="ml-3">SOI CẦU</span>
-        </a>
-      </li>
-      <li class="">
-        <a href="Tin tức.html" class="flex items-center px-5 py-5 font-semibold text-2xl text-gray-900 rounded-lg hover:bg-gray-100">
-          <span class="ml-3">TIN TỨC</span>
-        </a>
-      </li>
-      <li class="">
-        <a href="Hướng dẫn.html" class="flex items-center px-5 py-5 font-semibold text-2xl text-gray-900 rounded-lg hover:bg-gray-100">
-          <span class="ml-3">HƯỚNG DẪN</span>
-        </a>
-      </li>
-
-    </ul>
-  </div>
-</div>
-<!-- End Side bar mobile -->
+    <div class="side-menu-mobile fixed top-0 -translate-x-full z-[1000] overflow-y-hidden transition-transform duration-500 ">
+      <ul class="w-[60vw] bg-slate-100 h-screen">
+        <li class="">
+          <a href="index.html" class="flex items-center px-5 py-5 font-semibold text-2xl text-gray-900 rounded-lg hover:bg-gray-200">
+            <span class="ml-3">TRANG CHỦ</span>
+          </a>
+        </li>
+        <li class="">
+          <a  href="Đăng ký HappyLuke.html" class="flex items-center px-5 py-5 font-semibold text-2xl text-gray-900 rounded-lg hover:bg-gray-200">
+            <span class="ml-3">ĐĂNG KÝ HAPPYLUCK</span>
+          </a>
+        </li>
+        <li>
+          <button type="button" class="flex items-center w-full px-5 py-5 text-2xl font-semibold text-gray-900  rounded-lg group hover:bg-gray-200" >
+            <a  href="Khuyến Mãi HappyLuke.html"  class="flex-1 ml-3 text-left whitespace-nowrap">KHUYẾN MÃI HAPPYLUCK</a>
+            <svg
+              class="w-11 h-11 icon-dropdown-side-menu-mobile transition-all duration-500"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <ul  class=" sub-menu-side-menu-mobile  py-2 space-y-2  *:px-14 ">
+            <li class="">
+              <a href="#" class="flex items-center w-full p-5 text-2xl font-medium text-gray-800  rounded-lg group hover:bg-gray-200 ">KHUYẾN MÃI HOÀN TRẢ</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <button  type="button"  class="flex items-center w-full px-5 py-5 text-2xl font-semibold text-gray-900 rounded-lg group hover:bg-gray-200">
+            <a  href="./Sản phẩm.html" class="flex-1 ml-3 text-left whitespace-nowrap"  >SẢN PHẨM</a>
+            <svg
+              class="w-11 h-11 icon-dropdown-side-menu-mobile transition-all duration-500"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <ul class=" sub-menu-side-menu-mobile py-2 space-y-2 *:px-14">
+            <li>
+              <a
+                href="#"
+                class="flex items-center w-full p-5 text-2xl font-medium text-gray-800 transition duration-75 rounded-lg group hover:bg-gray-200 "
+                >BACCARAT</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center w-full p-5 text-2xl font-medium text-gray-800 transition duration-75 rounded-lg group hover:bg-gray-200 "
+                >BLACKJACK</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center w-full p-5 text-2xl font-medium text-gray-800 transition duration-75 rounded-lg group hover:bg-gray-200"
+                >ROULETTE</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center w-full p-5 text-2xl font-medium text-gray-800 transition duration-75 rounded-lg group hover:bg-gray-200"
+                >RỒNG HỔ</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center w-full p-5 text-2xl font-medium text-gray-800 transition duration-75 rounded-lg group hover:bg-gray-200"
+                >ESPORTS</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center w-full p-5 text-2xl font-medium text-gray-800 transition duration-75 rounded-lg group hover:bg-gray-200"
+                >MẬU BINH</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center w-full p-5 text-2xl font-medium text-gray-800 transition duration-75 rounded-lg group hover:bg-gray-200"
+                >BẦU CUA</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="">
+          <a
+            href="Gái Thiếu Vải.html"
+            class="flex items-center px-5 py-5 font-semibold text-2xl text-gray-900 rounded-lg hover:bg-gray-200"
+          >
+            <span class="ml-3">GÁI THIẾU VẢI</span>
+          </a>
+        </li>
+        <li class="">
+          <a
+            href="Soi cầu.html"
+            class="flex items-center px-5 py-5 font-semibold text-2xl text-gray-900 rounded-lg hover:bg-gray-200"
+          >
+            <span class="ml-3">SOI CẦU</span>
+          </a>
+        </li>
+        <li class="">
+          <a
+            href="Tin tức.html"
+            class="flex items-center px-5 py-5 font-semibold text-2xl text-gray-900 rounded-lg hover:bg-gray-200"
+          >
+            <span class="ml-3">TIN TỨC</span>
+          </a>
+        </li>
+        <li class="">
+          <a
+            href="Hướng dẫn.html"
+            class="flex items-center px-5 py-5 font-semibold text-2xl text-gray-900 rounded-lg hover:bg-gray-200"
+          >
+            <span class="ml-3">HƯỚNG DẪN</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- End Side bar mobile -->
   `;
   $("#header").html(header);
     const footer = `
@@ -512,5 +625,25 @@ $(document).ready(function(){
       $(this).addClass('B');
     }
   });
+  $(".menu-icon").on("click", function () {
+    if($(this).hasClass("active")){
+        $(this).removeClass("active");
+        $(".side-menu-mobile").addClass("-translate-x-full");
+    }
+    else{
+        $(this).addClass("active");
+        $(".side-menu-mobile").removeClass("-translate-x-full");
+    }
+  });
+  $(document).on("click", function (event) {
+      if (!$(event.target).closest(".side-menu-mobile").length && !$(event.target).closest(".menu-icon").length ) {
+        $(".menu-icon").removeClass("active");
+        $(".side-menu-mobile").addClass("-translate-x-full");
+      }
+    });
+    $(".icon-dropdown-side-menu-mobile").on("click", function(){
+        $(this).toggleClass("rotate-180");
+        $(this).closest("li").find('ul').toggleClass('active');
+    })
 
 });
