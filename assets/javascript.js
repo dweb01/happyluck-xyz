@@ -613,7 +613,7 @@ $(document).ready(function(){
                 </div>
                 
   </div>`;
-  $("#news_right").html(news_right)
+  $("#news_right").html(news_right);
   $('#showloading').delay(500).queue(function(next) {
     $(this).addClass('hidden');
     next();

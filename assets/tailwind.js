@@ -243,7 +243,7 @@ input{
 }
 p{
   font-size: 1.7rem/* 24px */;
-  line-height: 3rem/* 32px */;
+  line-height: 2.5rem/* 32px */;
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
