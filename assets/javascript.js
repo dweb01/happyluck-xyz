@@ -253,9 +253,6 @@ $(document).ready(function(){
               <ul class="list-disc *:text-white text-2xl pl-10">
                 <li><p class="text-white">Tên DN : Luke79</p></li>
                 <li><p class="text-white">Địa chỉ: 23 P. Hoàng Đạo Thúy, Trung Hoà, Cầu Giấy, Hà Nội, Việt Nam</p></li>
-                <li><p class="text-white">Hotline: 0967400537</p></li>
-                <li><p class="text-white">Di động : +84825150582</p></li>
-                <li><p class="text-white">Email: happyluck7979@gmail.com</p></li>
                 <li><p class="text-white">Website : https://HappyLuck.xyz/</p></li>
               </ul>
             </div>
