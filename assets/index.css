@@ -255,3 +255,12 @@
   line-height: 2.3rem/* 32px */;
 }
 
+.B{
+  border-inline: #fff 2px solid;
+  background: linear-gradient(45deg, rgba(109,34,195,1) 17%, rgba(45,102,253,1) 100%);
+
+}
+.header2 ul.items-center > li:hover{
+  border-inline: #fff 2px solid;
+  background: linear-gradient(45deg, rgba(109,34,195,1) 17%, rgba(45,102,253,1) 100%);
+}

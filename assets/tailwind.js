@@ -233,12 +233,12 @@ input{
 }
 @media(max-width: 1000px){
   html{
-      font-size: 59.5%;
+      font-size: 60.5%;
   }
 }
 @media(max-width: 675px){
   html{
-      font-size: 53.5%;
+      font-size: 56.5%;
   }
 }
 p{

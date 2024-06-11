@@ -61,15 +61,15 @@ $(document).ready(function(){
                 </button>
             </div>
             <ul class="items-center text-white font-semibold text-2xl uppercase flex-wrap *:leading-10 hidden md:flex">
-                <li class="p-5 border-r border-black hover:bg-[rgb(255,_136,_0)] relative duration-1000">
-                    <a href="index.html">Trang Chủ</a>
+                <li class="p-5    relative duration-1000" data-page="index">
+                    <a href="index.html" class="tittle_navbar">Trang Chủ</a>
                 </li>
-                <li class="p-5 border-r border-black hover:bg-[rgb(255,_136,_0)] relative">
-                    <a href="Đăng ký HappyLuke.html">Đăng ký HappyLuck</a>
+                <li class="p-5   relative">
+                    <a href="Đăng ký HappyLuke.html" class="tittle_navbar">Đăng ký HappyLuck</a>
                 </li>
-                <li class="p-5 group border-r border-black hover:bg-[rgb(255,_136,_0)] relative">
+                <li class="p-5 group   relative">
                     <a href="Khuyến Mãi HappyLuke.html" class="flex items-center">
-                        <div class="mr-1">Khuyến Mãi HappyLuck</div>
+                        <div class="mr-1 tittle_navbar">Khuyến Mãi HappyLuck</div>
                         <div>
                             <svg class="h-8 w-8 text-gray-600 inline-block" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" />
@@ -87,9 +87,9 @@ $(document).ready(function(){
                         </ul>
                     </div>
                 </li>
-                <li class="p-5 group border-r border-black hover:bg-[rgb(255,_136,_0)] relative">
+                <li class="p-5 group   relative">
                     <a href="Sản phẩm.html" class="flex items-center">
-                        <div class="mr-1">Sản phẩm</div>
+                        <div class="mr-1 tittle_navbar">Sản phẩm</div>
                         <div>
                             <svg class="h-8 w-8 text-gray-600 inline-block" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" />
@@ -137,17 +137,17 @@ $(document).ready(function(){
                         </ul>
                     </div>
                 </li>
-                <li class="p-5 border-r border-black hover:bg-[rgb(255,_136,_0)] relative">
-                    <a href="Gái Thiếu Vải.html">Gái Thiếu Vải</a>
+                <li class="p-5    relative">
+                    <a href="Gái Thiếu Vải.html" class="tittle_navbar">Gái Thiếu Vải</a>
                 </li>
-                <li class="p-5 border-r border-black hover:bg-[rgb(255,_136,_0)] relative">
-                    <a href="Soi cầu.html">Soi cầu</a>
+                <li class="p-5    relative">
+                    <a href="Soi cầu.html" class="tittle_navbar">Soi cầu</a>
                 </li>
-                <li class="p-5 border-r border-black hover:bg-[rgb(255,_136,_0)] relative">
-                    <a href="Tin tức.html">Tin tức</a>
+                <li class="p-5   relative">
+                    <a href="Tin tức.html" class="tittle_navbar">Tin tức</a>
                 </li>
-                <li class="p-5 border-r border-black hover:bg-[rgb(255,_136,_0)] relative">
-                    <a href="Hướng dẫn.html">Hướng dẫn</a>
+                <li class="p-5  relative">
+                    <a href="Hướng dẫn.html" class="tittle_navbar">Hướng dẫn</a>
                 </li>
             </ul>
         </div>
@@ -172,10 +172,10 @@ $(document).ready(function(){
                 <a href="Khuyến Mãi HappyLuke.html" class="flex-1 ml-3 text-left whitespace-nowrap" >KHUYẾN MÃI HAPPYLUCK</a>
                 <svg sidebar-toggle-item class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
         </button>
-        <ul id="dropdown-example" class="hidden py-2 space-y-2">
-          <li>
+        <ul id="dropdown-example" class="hidden py-2">
+          <li class="">
             <a href="#"
-              class="flex items-center w-full p-5 text-2xl font-medium text-gray-800 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">KHUYẾN MÃI HOÀN TRẢ</a>
+              class="flex items-center w-full p-5 text-2xl font-medium text-gray-800 transition duration-75 rounded-lg group  pl-11">KHUYẾN MÃI HOÀN TRẢ</a>
           </li>
         </ul>
       </li>
@@ -507,6 +507,13 @@ $(document).ready(function(){
   $('#showloading').delay(500).queue(function(next) {
     $(this).addClass('hidden');
     next();
+  });
+
+  $('.header2 ul.items-center li').each(function() {
+    a = $(this).find(".tittle_navbar").text();
+    if(active == a){
+      $(this).addClass('B');
+    }
   });
 
 });
