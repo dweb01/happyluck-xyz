@@ -395,10 +395,7 @@ $(document).ready(function(){
               <h1 class="text-white text-4xl font-bold">HƯỚNG DẪN</h1>
               <hr class="border-white border-t-[1px]">
               <div class="w-full">
-              <iframe class=""
-                              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12080.73732861526!2d-74.0059418!3d40.7127847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM40zMDA2JzEwLjAiTiA3NMKwMjUnMzcuNyJX!5e0!3m2!1sen!2sus!4v1648482801994!5m2!1sen!2sus"
-                              frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-                          </iframe></div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15229.67428207065!2d106.63062363812031!3d10.812503615298978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2skh!4v1718092552842!5m2!1sen!2skh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
     
             </div>
           </div>
@@ -646,4 +643,7 @@ $(document).ready(function(){
         $(this).closest("li").find('ul').toggleClass('active');
     })
 
+
+
 });
+
