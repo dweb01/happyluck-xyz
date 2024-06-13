@@ -1,3 +1,7 @@
+
+function detail(id){
+  location.href = `detail.html?id=${id}`;
+}
 $(document).ready(function(){
   const FunVisible = () => {
     if (window.pageYOffset > 250) {
@@ -74,12 +78,12 @@ $(document).ready(function(){
               <a href="index.html" class="tittle_navbar">Trang Chủ</a>
             </li>
             <li class="p-5 relative">
-              <a href="Đăng ký HappyLuke.html" class="tittle_navbar"
+              <a href="dang ky happyluck.html" class="tittle_navbar"
                 >Đăng ký HappyLuck</a
               >
             </li>
             <li class="p-5 group relative">
-              <a href="Khuyến Mãi HappyLuke.html" class="flex items-center">
+              <a href="khuyen mai happpyluck.html" class="flex items-center">
                 <div class="mr-1 tittle_navbar">Khuyến Mãi HappyLuck</div>
                 <div>
                   <svg
@@ -113,7 +117,7 @@ $(document).ready(function(){
               </div>
             </li>
             <li class="p-5 group relative">
-              <a href="Sản phẩm.html" class="flex items-center">
+              <a href="san pham.html" class="flex items-center">
                 <div class="mr-1 tittle_navbar">Sản phẩm</div>
                 <div>
                   <svg
@@ -198,15 +202,15 @@ $(document).ready(function(){
               </div>
             </li>
             <li class="p-5 relative">
-              <a href="Gái Thiếu Vải.html" class="tittle_navbar"
+              <a href="gai thieu vai gai.html" class="tittle_navbar"
                 >Gái Thiếu Vải</a
               >
             </li>
             <li class="p-5 relative">
-              <a href="Soi cầu.html" class="tittle_navbar">Soi cầu</a>
+              <a href="soi cau.html" class="tittle_navbar">Soi cầu</a>
             </li>
             <li class="p-5 relative">
-              <a href="Tin tức.html" class="tittle_navbar">Tin tức</a>
+              <a href="tin tuc.html" class="tittle_navbar">Tin tức</a>
             </li>
             <li class="p-5 relative">
               <a href="Hướng dẫn.html" class="tittle_navbar">Hướng dẫn</a>
@@ -224,13 +228,13 @@ $(document).ready(function(){
           </a>
         </li>
         <li class="">
-          <a  href="Đăng ký HappyLuke.html" class="flex items-center px-5 py-5 font-semibold text-2xl text-gray-900 rounded-lg hover:bg-gray-200">
+          <a  href="dang ky happyluck.html" class="flex items-center px-5 py-5 font-semibold text-2xl text-gray-900 rounded-lg hover:bg-gray-200">
             <span class="ml-3">ĐĂNG KÝ HAPPYLUCK</span>
           </a>
         </li>
         <li>
           <button type="button" class="flex items-center w-full px-5 py-5 text-2xl font-semibold text-gray-900  rounded-lg group hover:bg-gray-200" >
-            <a  href="Khuyến Mãi HappyLuke.html"  class="flex-1 ml-3 text-left whitespace-nowrap">KHUYẾN MÃI HAPPYLUCK</a>
+            <a  href="khuyen mai happpyluck.html"  class="flex-1 ml-3 text-left whitespace-nowrap">KHUYẾN MÃI HAPPYLUCK</a>
             <svg
               class="w-11 h-11 icon-dropdown-side-menu-mobile transition-all duration-500"
               fill="currentColor"
@@ -252,7 +256,7 @@ $(document).ready(function(){
         </li>
         <li>
           <button  type="button"  class="flex items-center w-full px-5 py-5 text-2xl font-semibold text-gray-900 rounded-lg group hover:bg-gray-200">
-            <a  href="./Sản phẩm.html" class="flex-1 ml-3 text-left whitespace-nowrap"  >SẢN PHẨM</a>
+            <a  href="./san pham.html" class="flex-1 ml-3 text-left whitespace-nowrap"  >SẢN PHẨM</a>
             <svg
               class="w-11 h-11 icon-dropdown-side-menu-mobile transition-all duration-500"
               fill="currentColor"
@@ -320,7 +324,7 @@ $(document).ready(function(){
         </li>
         <li class="">
           <a
-            href="Gái Thiếu Vải.html"
+            href="gai thieu vai gai.html"
             class="flex items-center px-5 py-5 font-semibold text-2xl text-gray-900 rounded-lg hover:bg-gray-200"
           >
             <span class="ml-3">GÁI THIẾU VẢI</span>
@@ -328,7 +332,7 @@ $(document).ready(function(){
         </li>
         <li class="">
           <a
-            href="Soi cầu.html"
+            href="./soi cau.html"
             class="flex items-center px-5 py-5 font-semibold text-2xl text-gray-900 rounded-lg hover:bg-gray-200"
           >
             <span class="ml-3">SOI CẦU</span>
@@ -336,7 +340,7 @@ $(document).ready(function(){
         </li>
         <li class="">
           <a
-            href="Tin tức.html"
+            href="tin tuc.html"
             class="flex items-center px-5 py-5 font-semibold text-2xl text-gray-900 rounded-lg hover:bg-gray-200"
           >
             <span class="ml-3">TIN TỨC</span>
@@ -364,7 +368,7 @@ $(document).ready(function(){
               <hr class="border-white border-t-[1px]">
               <p class="text-white">Happyluck chuyên trang cá cược thể thao, lô đề, casino, game slot… uy tín. Luke79.top là đại lý chính thức của nhà cái Happyluck cung cấp đường link vào nhà cái không bị chặn, gửi tiền, rút tiền  nhanh chóng.</p>
               <ul class="list-disc *:text-white text-2xl pl-10">
-                <li><p class="text-white">Tên DN : Luke79</p></li>
+                <li><p class="text-white">Tên DN : HappyLuck</p></li>
                 <li><p class="text-white">Địa chỉ: 23 P. Hoàng Đạo Thúy, Trung Hoà, Cầu Giấy, Hà Nội, Việt Nam</p></li>
                 <li><p class="text-white">Website : https://HappyLuck.xyz/</p></li>
               </ul>
@@ -372,23 +376,23 @@ $(document).ready(function(){
             <div class="py-5 lg:py-10 *:pb-5">
               <h1 class="text-white text-4xl font-bold">HƯỚNG DẪN</h1>
               <hr class="border-white border-t-[1px]">
-              <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="Hướng dẫn.html">Hướng dẫn đăng ký</a></p>
-              <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="Hướng dẫn đăng nhập.html">Hướng dẫn đăng nhập</a></p>
-              <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="Hướng dẫn gửi tiền.html">Hướng dẫn gửi tiền</a></p>
-              <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="Hướng dẫn rút tiền.html">Hướng dẫn rút tiền</a></p>
-              <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="Đại lý.html">Đại lý</a></p>
+              <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="huong dan.html">Hướng dẫn đăng ký</a></p>
+              <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="huong dan dang nhap .html">Hướng dẫn đăng nhập</a></p>
+              <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="huong dan gui tien.html">Hướng dẫn gửi tiền</a></p>
+              <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="huong dan rut tien.html">Hướng dẫn rút tiền</a></p>
+              <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="dai ly.html">Đại lý</a></p>
     
             </div>
             <div class="py-5 lg:py-10 *:pb-5">
               <h1 class="text-white text-4xl font-bold">HƯỚNG DẪN</h1>
               <hr class="border-white border-t-[1px]">
-              <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="Giới thiệu.html">Giới thiệu</a></p>
-              <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="Chính sách bảo mật.html">Chính sách bảo mật</a></p>
-              <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="Điều khoản và điều kiện.html">Điều khoản và điều kiện</a></p>
-              <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="Luật hoàn tiềnchống rửa tiền.html">Luật hoàn tiền / chống rửa tiền</a></p>
-              <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="Miễn trừ trách nhiệm.html">Miễn trừ trách nhiệm</a></p>
-              <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="Câu hỏi thường gặp.html">Câu hỏi thường gặp</a></p>
-              <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="Tác giả.html">Tác giả</a></p>
+              <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="Giới thiệu">Giới thiệu</a></p>
+              <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="chinh sach bao mat.html">Chính sách bảo mật</a></p>
+              <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="dieu khoan va dieu kien.html">Điều khoản và điều kiện</a></p>
+              <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="luat hoan tienchong rua tien.html">Luật hoàn tiền / chống rửa tiền</a></p>
+              <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="mien tru trach nhiem.html">Miễn trừ trách nhiệm</a></p>
+              <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="cau hoi thuong gap.html">Câu hỏi thường gặp</a></p>
+              <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="tac gai.html">Tác giả</a></p>
     
             </div>
             <div class="py-5 lg:py-10 *:pb-5">
@@ -478,12 +482,12 @@ $(document).ready(function(){
                 <div class="news-last mt-3 mb:-5 *:mb-7">
                     <div class="flex gap-5">
                         <div class="flex justify-center max-w-[10rem]  bg-center">
-                            <a href="">
-                            <img class="object-cover w-full h-fit mt-2" src="./assets/images/tim-hieu-afk-la-gi-600x400.jpg" alt=""></a>
+                            <a>
+                            <img class="cursor-pointer"  onclick="detail(19)" class="object-cover w-full h-fit mt-2" src="./assets/images/tim-hieu-afk-la-gi-600x400.jpg" alt=""></a>
                         </div>
                         <div>
-                            <p class="text-blue-700 hover:text-gray-800 duration-300"><a href="">AFK là gì? Vì sao các game thủ thường xuyên sử dụng cụm từ AFK? </a></p>
-                            <p class="flex items-center gap-2">
+                            <p class="cursor-pointer" onclick="detail(19)" class="text-blue-700 hover:text-gray-800 duration-300"><a >AFK là gì? Vì sao các game thủ thường xuyên sử dụng cụm từ AFK? </a></p>
+                            <p class="cursor-pointer"  onclick="detail(19)" class="flex items-center gap-2">
                                 <svg class="h-6 w-6 text-gray-700"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <rect x="4" y="5" width="16" height="16" rx="2" />  <line x1="16" y1="3" x2="16" y2="7" />  <line x1="8" y1="3" x2="8" y2="7" />  <line x1="4" y1="11" x2="20" y2="11" />  <line x1="11" y1="15" x2="12" y2="15" />  <line x1="12" y1="15" x2="12" y2="18" /></svg>
                                 <span class="text-xl">15 Tháng Chín, 2023</span>
                             </p>
@@ -491,12 +495,12 @@ $(document).ready(function(){
                     </div>
                     <div class="flex gap-5">
                         <div class="flex justify-center max-w-[10rem]  bg-center">
-                            <a href="">
-                            <img class="object-cover w-full h-fit mt-2" src="./assets/images/thuat-toan-sicbo-la-gi-600x400.jpg" alt=""></a>
+                            <a >
+                            <img class="cursor-pointer" onclick="detail(20)" class="object-cover w-full h-fit mt-2" src="./assets/images/thuat-toan-sicbo-la-gi-600x400.jpg" alt=""></a>
                         </div>
                         <div>
-                            <p class="text-blue-700 hover:text-gray-800 duration-300"><a href="">Tìm hiểu về thuật toán sicbo và cách áp dụng</a></p>
-                            <p class="flex items-center gap-2">
+                            <p class="cursor-pointer" onclick="detail(20)" class="text-blue-700 hover:text-gray-800 duration-300"><a >Tìm hiểu về thuật toán sicbo và cách áp dụng</a></p>
+                            <p class="cursor-pointer" onclick="detail(20)" class="flex items-center gap-2">
                                 <svg class="h-6 w-6 text-gray-700"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <rect x="4" y="5" width="16" height="16" rx="2" />  <line x1="16" y1="3" x2="16" y2="7" />  <line x1="8" y1="3" x2="8" y2="7" />  <line x1="4" y1="11" x2="20" y2="11" />  <line x1="11" y1="15" x2="12" y2="15" />  <line x1="12" y1="15" x2="12" y2="18" /></svg>
                                 <span class="text-xl">8 Tháng Chín, 2023</span>
                             </p>
@@ -504,12 +508,12 @@ $(document).ready(function(){
                     </div>
                     <div class="flex gap-5">
                         <div class="flex justify-center max-w-[10rem]  bg-center">
-                            <a href="">
-                            <img class="object-cover w-full h-fit mt-2" src="./assets/images/Cach-choi-lo-to-don-gian-600x400.jpg" alt=""></a>
+                            <a >
+                            <img class="cursor-pointer" onclick="detail(21)" class="object-cover w-full h-fit mt-2" src="./assets/images/Cach-choi-lo-to-don-gian-600x400.jpg" alt=""></a>
                         </div>
                         <div>
-                            <p class="text-blue-700 hover:text-gray-800 duration-300"><a href="">Cách chơi lô tô online? Bật mí những mẹo chơi loto hay </a></p>
-                            <p class="flex items-center gap-2">
+                            <p class="cursor-pointer" onclick="detail(21)" class="text-blue-700 hover:text-gray-800 duration-300"><a >Cách chơi lô tô online? Bật mí những mẹo chơi loto hay </a></p>
+                            <p class="cursor-pointer" onclick="detail(21)" class="flex items-center gap-2">
                                 <svg class="h-6 w-6 text-gray-700"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <rect x="4" y="5" width="16" height="16" rx="2" />  <line x1="16" y1="3" x2="16" y2="7" />  <line x1="8" y1="3" x2="8" y2="7" />  <line x1="4" y1="11" x2="20" y2="11" />  <line x1="11" y1="15" x2="12" y2="15" />  <line x1="12" y1="15" x2="12" y2="18" /></svg>
                                 <span class="text-xl">1 Tháng Chín, 2023</span>
                             </p>
@@ -517,12 +521,12 @@ $(document).ready(function(){
                     </div>
                     <div class="flex gap-5">
                         <div class="flex justify-center max-w-[10rem]  bg-center">
-                            <a href="">
-                            <img class="object-cover w-full h-fit mt-2" src="./assets/images/cach-choi-tai-xiu-2-600x400.jpg" alt=""></a>
+                            <a >
+                            <img class="cursor-pointer" onclick="detail(24)" class="object-cover w-full h-fit mt-2" src="./assets/images/cach-choi-tai-xiu-2-600x400.jpg" alt=""></a>
                         </div>
                         <div>
-                            <p class="text-blue-700 hover:text-gray-800 duration-300"><a href="">Tài xỉu là trò chơi gì? Cách chơi tài xỉu tại Luke79.top</a></p>
-                            <p class="flex items-center gap-2">
+                            <p class="cursor-pointer" onclick="detail(24)" class="text-blue-700 hover:text-gray-800 duration-300"><a >Tài xỉu là trò chơi gì? Cách chơi tài xỉu tại Luke79.top</a></p>
+                            <p class="cursor-pointer" onclick="detail(24)" class="flex items-center gap-2">
                                 <svg class="h-6 w-6 text-gray-700"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <rect x="4" y="5" width="16" height="16" rx="2" />  <line x1="16" y1="3" x2="16" y2="7" />  <line x1="8" y1="3" x2="8" y2="7" />  <line x1="4" y1="11" x2="20" y2="11" />  <line x1="11" y1="15" x2="12" y2="15" />  <line x1="12" y1="15" x2="12" y2="18" /></svg>
                                 <span class="text-xl">11 Tháng Tám, 2023</span>
                             </p>
@@ -530,86 +534,19 @@ $(document).ready(function(){
                     </div>
                     <div class="flex gap-5">
                         <div class="flex justify-center max-w-[10rem]  bg-center">
-                            <a href="">
-                            <img class="object-cover w-full h-fit mt-2" src="./assets/images/cach-choi-lien-minh-huyen-thoai-len-do-600x400.jpg" alt=""></a>
+                            <a >
+                            <img class="cursor-pointer" onclick="detail(25)" class="object-cover w-full h-fit mt-2" src="./assets/images/cach-choi-lien-minh-huyen-thoai-len-do-600x400.jpg" alt=""></a>
                         </div>
                         <div>
-                            <p class="text-blue-700 hover:text-gray-800 duration-300"><a href="">Cách chơi Liên Minh Huyền Thoại hiệu quả tại Luke79.top </a></p>
-                            <p class="flex items-center gap-2">
+                            <p class="cursor-pointer" onclick="detail(25)" class="text-blue-700 hover:text-gray-800 duration-300"><a >Cách chơi Liên Minh Huyền Thoại hiệu quả tại Luke79.top </a></p>
+                            <p class="cursor-pointer" onclick="detail(25)" class="flex items-center gap-2">
                                 <svg class="h-6 w-6 text-gray-700"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <rect x="4" y="5" width="16" height="16" rx="2" />  <line x1="16" y1="3" x2="16" y2="7" />  <line x1="8" y1="3" x2="8" y2="7" />  <line x1="4" y1="11" x2="20" y2="11" />  <line x1="11" y1="15" x2="12" y2="15" />  <line x1="12" y1="15" x2="12" y2="18" /></svg>
                                 <span class="text-xl">31 Tháng Năm, 2023</span>
                             </p>
                         </div>
                     </div>
-                    <div class="flex gap-5">
-                        <div class="flex justify-center max-w-[10rem]  bg-center">
-                            <a href="">
-                            <img class="object-cover w-full h-fit mt-2" src="./assets/images/cach-choi-ca-cuoc-efootball-anh-dai-dien-600x400.jpg" alt=""></a>
-                        </div>
-                        <div>
-                            <p class="text-blue-700 hover:text-gray-800 duration-300"><a href="">Cách Chơi Cá Cược Efootball Và Những Chiến Thuật “Bất Bại” </a></p>
-                            <p class="flex items-center gap-2">
-                                <svg class="h-6 w-6 text-gray-700"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <rect x="4" y="5" width="16" height="16" rx="2" />  <line x1="16" y1="3" x2="16" y2="7" />  <line x1="8" y1="3" x2="8" y2="7" />  <line x1="4" y1="11" x2="20" y2="11" />  <line x1="11" y1="15" x2="12" y2="15" />  <line x1="12" y1="15" x2="12" y2="18" /></svg>
-                                <span class="text-xl">25 Tháng Tư, 2023</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex gap-5">
-                        <div class="flex justify-center max-w-[10rem]  bg-center">
-                            <a href="">
-                            <img class="object-cover w-full h-fit mt-2" src="./assets/images/cach-choi-bai-cau.jpg" alt=""></a>
-                        </div>
-                        <div>
-                            <p class="text-blue-700 hover:text-gray-800 duration-300"><a href="">Cách Chơi Bài Cẩu Chi Tiết Từ A – Z “Thắng Mọi Trận Chơi”</a></p>
-                            <p class="flex items-center gap-2">
-                                <svg class="h-6 w-6 text-gray-700"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <rect x="4" y="5" width="16" height="16" rx="2" />  <line x1="16" y1="3" x2="16" y2="7" />  <line x1="8" y1="3" x2="8" y2="7" />  <line x1="4" y1="11" x2="20" y2="11" />  <line x1="11" y1="15" x2="12" y2="15" />  <line x1="12" y1="15" x2="12" y2="18" /></svg>
-                                <span class="text-xl">24 Tháng Tư, 2023</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex gap-5">
-                        <div class="flex justify-center max-w-[10rem]  bg-center">
-                            <a href="">
-                            <img class="object-cover w-full h-fit mt-2" src="./assets/images/soi-keo-the-vang.jpg" alt=""></a>
-                        </div>
-                        <div>
-                            <p class="text-blue-700 hover:text-gray-800 duration-300"><a href="">Bí Quyết Soi Kèo Thẻ Vàng Giành Chiến Thắng “Siêu Dễ”</a></p>
-                            <p class="flex items-center gap-2">
-                                <svg class="h-6 w-6 text-gray-700"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <rect x="4" y="5" width="16" height="16" rx="2" />  <line x1="16" y1="3" x2="16" y2="7" />  <line x1="8" y1="3" x2="8" y2="7" />  <line x1="4" y1="11" x2="20" y2="11" />  <line x1="11" y1="15" x2="12" y2="15" />  <line x1="12" y1="15" x2="12" y2="18" /></svg>
-                                <span class="text-xl">23 Tháng Tư, 2023</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex gap-5">
-                        <div class="flex justify-center max-w-[10rem]  bg-center">
-                            <a href="">
-                            <img class="object-cover w-full h-fit mt-2" src="./assets/images/Cach-choi-pokdeng.jpg" alt=""></a>
-                        </div>
-                        <div>
-                            <p class="text-blue-700 hover:text-gray-800 duration-300"><a href="">Cách Chơi Pokdeng “Thắng Mọi Trận Chơi” – Siêu Đỉnh   </a></p>
-                            <p class="flex items-center gap-2">
-                                <svg class="h-6 w-6 text-gray-700"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <rect x="4" y="5" width="16" height="16" rx="2" />  <line x1="16" y1="3" x2="16" y2="7" />  <line x1="8" y1="3" x2="8" y2="7" />  <line x1="4" y1="11" x2="20" y2="11" />  <line x1="11" y1="15" x2="12" y2="15" />  <line x1="12" y1="15" x2="12" y2="18" /></svg>
-                                <span class="text-xl">22 Tháng Tư, 2023</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex gap-5">
-                        <div class="flex justify-center max-w-[10rem]  bg-center">
-                            <a href="">
-                            <img class="object-cover w-full h-fit mt-2" src="./assets/images/cach-choi-bai-phom.jpg" alt=""></a>
-                        </div>
-                        <div>
-                            <p class="text-blue-700 hover:text-gray-800 duration-300"><a href="">Cách Chơi Bài Phỏm “Đỉnh Của Đỉnh” Như Chuyên Gia</a></p>
-                            <p class="flex items-center gap-2">
-                                <svg class="h-6 w-6 text-gray-700"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <rect x="4" y="5" width="16" height="16" rx="2" />  <line x1="16" y1="3" x2="16" y2="7" />  <line x1="8" y1="3" x2="8" y2="7" />  <line x1="4" y1="11" x2="20" y2="11" />  <line x1="11" y1="15" x2="12" y2="15" />  <line x1="12" y1="15" x2="12" y2="18" /></svg>
-                                <span class="text-xl">21 Tháng Tư, 2023</span>
-                            </p>
-                        </div>
-                    </div>
-                   
-                </div>
-                
-  </div>`;
+                  </div>
+                </div>`;
   $("#news_right").html(news_right);
   $('#showloading').delay(500).queue(function(next) {
     $(this).addClass('hidden');

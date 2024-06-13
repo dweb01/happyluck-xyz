@@ -193,6 +193,20 @@
 }
 
 
+.content-1 > .main_left > div > div > p > em.under-pic{
+  display: flex;
+  justify-content: center;
+  margin-bottom: .5rem;
+}
+.content-1 > .main_left > div > div  > h2 , .content-1 > .main_left > div > div  > p{
+  margin: 2.5rem 0;
+}
+.content-1 > .main_left > div > div > .btn{
+  margin: 2.5rem 0;
+}
+.content-1 > .main_left > div > div > div > figure{
+  margin: 2.5rem 0;
+}
 .content-1 h2{
   font-size: 3rem/* 48px */;
     line-height: 1;
@@ -250,6 +264,25 @@
   color: rgb(55 65 81 / var(--tw-text-opacity));
   margin-left: 50px;
 }
+.content-1 em strong a strong{
+  color: rgb(28, 28, 205);
+}
+.content-1 .main_left figure table{
+  width: 100%;
+}
+.content-1 .main_left figure table tbody tr td{
+  border: 1px solid;
+  padding: .5em;
+}
+
+
+
+
+
+
+
+
+
 .news-last p{
   font-size: 1.5rem/* 24px */;
   line-height: 2.3rem/* 32px */;
