@@ -366,7 +366,7 @@ $(document).ready(function(){
             <div class="py-5 lg:py-10 *:pb-5">
               <h1 class="text-white text-4xl font-bold">GIỚI THIỆU</h1>
               <hr class="border-white border-t-[1px]">
-              <p class="text-white">Happyluck chuyên trang cá cược thể thao, lô đề, casino, game slot… uy tín. Luke79.top là đại lý chính thức của nhà cái Happyluck cung cấp đường link vào nhà cái không bị chặn, gửi tiền, rút tiền  nhanh chóng.</p>
+              <p class="text-white">Happyluck chuyên trang cá cược thể thao, lô đề, casino, game slot… uy tín. Happyluck.xyz là đại lý chính thức của nhà cái Happyluck cung cấp đường link vào nhà cái không bị chặn, gửi tiền, rút tiền  nhanh chóng.</p>
               <ul class="list-disc *:text-white text-2xl pl-10">
                 <li><p class="text-white">Tên DN : HappyLuck</p></li>
                 <li><p class="text-white">Địa chỉ: 23 P. Hoàng Đạo Thúy, Trung Hoà, Cầu Giấy, Hà Nội, Việt Nam</p></li>
