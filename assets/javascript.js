@@ -213,7 +213,7 @@ $(document).ready(function(){
               <a href="tin tuc.html" class="tittle_navbar">Tin tức</a>
             </li>
             <li class="p-5 relative">
-              <a href="Hướng dẫn.html" class="tittle_navbar">Hướng dẫn</a>
+              <a href="huong dan.html" class="tittle_navbar">Hướng dẫn</a>
             </li>
           </ul>
         </div>
@@ -386,7 +386,7 @@ $(document).ready(function(){
             <div class="py-5 lg:py-10 *:pb-5">
               <h1 class="text-white text-4xl font-bold">HƯỚNG DẪN</h1>
               <hr class="border-white border-t-[1px]">
-              <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="Giới thiệu">Giới thiệu</a></p>
+              <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="gioi thieu.html">Giới thiệu</a></p>
               <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="chinh sach bao mat.html">Chính sách bảo mật</a></p>
               <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="dieu khoan va dieu kien.html">Điều khoản và điều kiện</a></p>
               <p class="text-white hover:text-[rgb(255,_136,_0)] duration-300"><a href="luat hoan tienchong rua tien.html">Luật hoàn tiền / chống rửa tiền</a></p>
@@ -454,7 +454,7 @@ $(document).ready(function(){
       e.preventDefault();
       $("html, body").animate({ scrollTop: 0 }, "600");
   }); 
-  const news_right = `<div class="border rounded-lg p-5 lg:p-10 ">
+  const news_right = `<div class="border rounded-lg p-5 lg:p-10  ">
                 <h5 class="text-[1.7rem] font-bold py-3">
                     TÌM KIẾM
                 </h5>
@@ -548,13 +548,11 @@ $(document).ready(function(){
                   </div>
                 </div>`;
   $("#news_right").html(news_right);
-  $('#showloading').delay(500).queue(function(next) {
-    $(this).addClass('hidden');
-    next();
-  });
 
-  $('.header2 ul.items-center li').each(function() {
+
+  $('.header2 > ul.items-center > li').each(function() {
     a = $(this).find(".tittle_navbar").text();
+    
     if(active == a){
       $(this).addClass('B');
     }
@@ -580,7 +578,10 @@ $(document).ready(function(){
         $(this).closest("li").find('ul').toggleClass('active');
     })
 
-
+    $('#showloading').delay(500).queue(function(next) {
+      $(this).addClass('hidden');
+      next();
+    });
 
 });
 

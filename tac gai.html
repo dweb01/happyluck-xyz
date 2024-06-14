@@ -52,33 +52,39 @@
 <div id="footer"></div>
 <div id="backtotop"></div>
 <script>
+    var active = "";
       var items_main = [
   {
+    id: 19,
     h2: "AFK là gì? Vì sao các game thủ thường xuyên sử dụng cụm từ AFK? ",
     span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
     p: "AFK là gì? Tại sao các game thủ thường xuyên sử dụng cụm từ AFK trong các trận game? Nguồn gốc ra đời của cụm từ AFK là từ đâu mà ra? Các game thủ Liên Minh Huyền Thoại thường AFK trong những trường hợp nào? Hiện nay có...",
     image: "tim-hieu-afk-la-gi-600x400.jpg"
   },
   {
+    id: 20,
     h2: "Tìm hiểu về thuật toán sicbo và cách áp dụng",
     span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
     p: "Khi chơi cá cược sicbo nhiều người chơi có kinh nghiệm lâu năm thường áp dụng các thuật toán sicbo để giúp bản thân có cơ hội chiến thắng cao hơn. Vậy thuật toán sicbo là gì và cách áp dụng như thế nào? Bạn hãy cùng đăng nhập...",
     image: "thuat-toan-sicbo-la-gi-600x400.jpg"
   },
   {
+    id: 21,
     h2: "Cách chơi lô tô online? Bật mí những mẹo chơi loto hay ",
     span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
     p: "Cách chơi lô tô trực tuyến khá giống với dạng truyền thống. Do đó, nếu anh em đã từng trải nghiệm mảng giải trí này ngoài đời thực sẽ dễ dàng bắt nhịp hơn. Với sự phát triển của công nghệ, cược thủ dễ dàng chơi loto tại sân...",
     image: "Cach-choi-lo-to-don-gian-600x400.jpg"
   },
   {
-    h2: "Tài xỉu là trò chơi gì? Cách chơi tài xỉu tại Luke79.top ",
+    id: 24,
+    h2: "Tài xỉu là trò chơi gì? Cách chơi tài xỉu tại Happyluck ",
     span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
     p: "Tài xỉu là một bộ môn vô cùng hấp dẫn, thu hút người chơi khó lòng dứt ra được. Đây cũng là một môn cá cược có tính dễ chơi. Tuy nhiên thì không phải ai cũng biết cách chơi tài xỉu chuẩn ra sao? Bí kíp để chọn...",
     image: "cach-choi-tai-xiu-2-600x400.jpg"
   },
   {
-    h2: "Slot game đổi thưởng có gì hay – luke79.top",
+    id: 26,
+    h2: "Slot game đổi thưởng có gì hay – Happyluck",
     span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
     p: "Slot game đổi thưởng là hình thức giải trí có số lượng người yêu thích nhất hiện nay. Nhưng anh em nếu muốn tham gia có hiệu quả cần phải tìm hiểu thông tin một cách kỹ lưỡng. Và để có thêm kiến thức hữu ích, game thủ đừng...",
     image: "slot-game-doi-thuong-4-600x400.jpeg"
@@ -88,8 +94,8 @@
   ];
   $.each(items_main, function(index, item) {
     var item_main = `
-        <div class="border rounded-lg p-5 lg:p-10 *:pb-5">
-            <h2>${item.h2}</h2>
+        <div class="border rounded-lg p-5 lg:p-10 *:pb-5 mb-5 lg:mb-10">
+            <h2 onclick="detail(${item.id})">${item.h2}</h2>
             <div class="flex items-center gap-5">
                 <div class="flex items-center w-[3rem] h-[3rem] bg-center">
                     <img class="w-full h-full rounded-[100%] object-cover" src="./assets/images/hoang-khanh-ngan-600x400.jpg" alt="">
@@ -98,10 +104,10 @@
             </div>
             <div class="grid grid-cols-12 gap-5 items-center">
                 <div class="col-span-12 lg:col-span-3 ">
-                    <img src="./assets/images/${item.image}" alt="">
+                    <img class="cursor-pointer" onclick="detail(${item.id})" src="./assets/images/${item.image}" alt="">
                 </div>
                 <div class="*:pb-5 col-span-12 lg:col-span-9">
-                    <p>${item.p}</p>
+                    <p onclick="detail(${item.id})">${item.p}</p>
                     <button type="button" class="text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-lg text-2xl px-10 py-4 text-center me-2 mb-2">Xem thêm</button>
                 </div>
             </div>
