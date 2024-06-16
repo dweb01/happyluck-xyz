@@ -440,10 +440,11 @@ $(document).ready(function(){
   $("#news_right").html(news_right);
 
 
-  $('.header2 > ul.items-center > li').each(function() {
+  $('.header2  ul.items-center > li').each(function() {
     a = $(this).find(".tittle_navbar").text();
     
     if(active == a){
+      
       $(this).addClass('B');
     }
   });
