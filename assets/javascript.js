@@ -2,6 +2,9 @@
 function detail(id){
   location.href = `detail.html?id=${id}`;
 }
+function url(){
+  location.href = ('https://www.hay88.one/?inviteCode=5829700');
+}
 $(document).ready(function(){
   const FunVisible = () => {
     if (window.pageYOffset > 250) {
@@ -319,9 +322,7 @@ $(document).ready(function(){
         </div>
       </footer>
     `;
-    function url(){
-      location.href = ('https://www.hay88.one/?inviteCode=5829700');
-    }
+
   $("#footer").html(footer);
   const backtotop = `<button class="Btn-backtotop1 backgroundanimation">
           <svg class="Btn-backtotop1arrow h-7 w-7" viewBox="0 0 512 512">
