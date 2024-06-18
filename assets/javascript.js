@@ -143,7 +143,7 @@ $(document).ready(function(){
           </button>
           <ul  class=" sub-menu-side-menu-mobile  py-2 space-y-2  *:px-14 ">
             <li class="">
-              <a href="#" class="flex items-center w-full p-5 text-2xl font-medium text-gray-800  rounded-lg group hover:bg-gray-200 ">KHUYẾN MÃI HOÀN TRẢ</a>
+              <a href="https://www.hay88.one/?inviteCode=5829700" class="flex items-center w-full p-5 text-2xl font-medium text-gray-800  rounded-lg group hover:bg-gray-200 ">KHUYẾN MÃI HOÀN TRẢ</a>
             </li>
           </ul>
         </li>
@@ -166,49 +166,49 @@ $(document).ready(function(){
           <ul class=" sub-menu-side-menu-mobile py-2 space-y-2 *:px-14">
             <li>
               <a
-                href="#"
+                href="https://www.hay88.one/?inviteCode=5829700"
                 class="flex items-center w-full p-5 text-2xl font-medium text-gray-800 transition duration-75 rounded-lg group hover:bg-gray-200 "
                 >BACCARAT</a
               >
             </li>
             <li>
               <a
-                href="#"
+                href="https://www.hay88.one/?inviteCode=5829700"
                 class="flex items-center w-full p-5 text-2xl font-medium text-gray-800 transition duration-75 rounded-lg group hover:bg-gray-200 "
                 >BLACKJACK</a
               >
             </li>
             <li>
               <a
-                href="#"
+                href="https://www.hay88.one/?inviteCode=5829700"
                 class="flex items-center w-full p-5 text-2xl font-medium text-gray-800 transition duration-75 rounded-lg group hover:bg-gray-200"
                 >ROULETTE</a
               >
             </li>
             <li>
               <a
-                href="#"
+                href="https://www.hay88.one/?inviteCode=5829700"
                 class="flex items-center w-full p-5 text-2xl font-medium text-gray-800 transition duration-75 rounded-lg group hover:bg-gray-200"
                 >RỒNG HỔ</a
               >
             </li>
             <li>
               <a
-                href="#"
+                href="https://www.hay88.one/?inviteCode=5829700"
                 class="flex items-center w-full p-5 text-2xl font-medium text-gray-800 transition duration-75 rounded-lg group hover:bg-gray-200"
                 >ESPORTS</a
               >
             </li>
             <li>
               <a
-                href="#"
+                href="https://www.hay88.one/?inviteCode=5829700"
                 class="flex items-center w-full p-5 text-2xl font-medium text-gray-800 transition duration-75 rounded-lg group hover:bg-gray-200"
                 >MẬU BINH</a
               >
             </li>
             <li>
               <a
-                href="#"
+                href="https://www.hay88.one/?inviteCode=5829700"
                 class="flex items-center w-full p-5 text-2xl font-medium text-gray-800 transition duration-75 rounded-lg group hover:bg-gray-200"
                 >BẦU CUA</a
               >
